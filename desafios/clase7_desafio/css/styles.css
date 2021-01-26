@@ -1,0 +1,35 @@
+
+
+.menu {
+	background-color: #018739 !important;
+}
+
+.navbar {
+	background-color: #018739 !important;
+}
+
+.subtitulo {
+	font-size: 150%;
+	color: white;
+}
+
+.form-label {
+	color: #ffffff;
+}
+
+.fondo {
+	background: url(../imagenes/fondo.jpg);
+}
+
+#formulario {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.formularioCalculadora {
+	background-color: #067668;
+	padding:20px;
+}
