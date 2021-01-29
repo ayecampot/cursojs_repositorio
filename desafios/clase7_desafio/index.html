@@ -25,15 +25,20 @@
                 <div class="col-12 col-m-6 col-lg-8">
                     <form class="formularioCalculadora">
                         <fieldset>
-                            <legend class="subtitulo">Calculá tu huella de carbono</legend>
+                            <legend class="subtitulo" id="titulo">Calculá tu huella de carbono</legend>
+                            <div class="resultado"></div>
                             <div class="mb-3">
+                                <label for="disabledTextInput" class="form-label">¿Cuántos mts2 tiene tu vivienda?</label>
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="120">
+                            </div>
+                            <!-- <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">¿De qué tamaño es tu vivienda?</label>
                                 <select id="disabledSelect" class="form-select">
                                     <option value="S">Menos de 100 mts2</option>
                                     <option value="M">Hasta 150 mts2 </option>
                                     <option value="L">Más de 150 mts2</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">¿Usás bombillas de bajo consumo?</label>
                                 <select id="disabledSelect" class="form-select">
