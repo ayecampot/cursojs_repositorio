@@ -29,7 +29,7 @@ function calcularHuella() {
     var huella = document.getElementById("alert-calculo-huella")
     huella.innerText = consumoHuella(huellaCarbono);
 
-    document.getElementById("alert-calculo").className = "alert alert-warning alert-dismissible fade show"
+    document.getElementById("alert-calculo").className = "alert alert-success alert-dismissible fade show"
 }
 
 var botonCalcular = document.getElementById("calculo");
