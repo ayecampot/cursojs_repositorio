@@ -11,6 +11,7 @@
 .subtitulo {
 	font-size: 150%;
 	color: white;
+	margin-bottom: 30px;
 }
 
 .form-label {
@@ -32,4 +33,12 @@
 .formularioCalculadora {
 	background-color: #067668;
 	padding:20px;
+}
+
+.hide{
+	display:none;
+}
+
+.show {
+	display:block;
 }

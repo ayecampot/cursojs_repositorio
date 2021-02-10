@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 9</title>
+    <title>2da entrega proyecto final</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
@@ -28,6 +28,15 @@
                     <form class="formularioCalculadora">
                         <fieldset>
                             <legend class="subtitulo">Calculá tu huella de carbono</legend>
+                            <div id="historial" class="mb-3 hide">
+                                <label for="inputHistorial" class="form-label">Historial</label>
+                                <select id="inputHistorial" class="form-select">
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Maria">
+                            </div>
                             <div class="mb-3">
                                 <label for="inputVivienda" class="form-label">¿De qué tamaño es tu vivienda?</label>
                                 <select id="inputVivienda" class="form-select">
@@ -96,13 +105,12 @@
                                 <input type="text" id="disabledTextInput" class="form-control" placeholder="4">
                             </div> -->
                             <button type="button" class="btn btn-light" id="calculo">Calcular</button>
-
-                            <div id="alert-calculo" class="alert alert-success alert-dismissible fade hide" role="alert"
+                            <div id="alert-calculo" class=" alert-success alert-dismissible fade hide" role="alert"
                                 style="margin-top: 30px; margin-bottom: 60px;">
                                 <i class="bi bi-star" style="margin-right: 5px;"></i> Tu huella de carbono <strong id="alert-calculo-huella"></strong>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <button id="cargaNueva" type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="location.reload()" > 
                                     <span aria-hidden="true">&times;</span>
-                                </button>
+                                </button>    
                             </div>
                         </fieldset>
                     </form>
