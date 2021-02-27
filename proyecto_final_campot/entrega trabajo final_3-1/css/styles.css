@@ -1,0 +1,57 @@
+/* * {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+.swiper-container {
+	height: 100%;
+	width: 100%;
+} */
+
+.menu {
+	background-color: #018739 !important;
+}
+
+.navbar {
+	background-color: #018739 !important;
+}
+
+.subtitulo {
+	font-size: 150%;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.form-label {
+	color: #ffffff;
+}
+
+.fondo {
+	background: url(../imagenes/fondo.jpg);
+}
+
+#formulario {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.formularioCalculadora {
+	background-color: #067668;
+	padding:20px;
+}
+
+.hide{
+	display:none;
+}
+
+.show {
+	display:block;
+}
