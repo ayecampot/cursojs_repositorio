@@ -37,7 +37,7 @@ header .menu {
 
 .menu p {
     color: #fff;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
 header ul li {
@@ -123,5 +123,44 @@ header ul li a {
 .swiper-button-next {
     left: 610px;
 
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+#tu-resultado {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#img-resultado {
+    max-height: 300px;
+}
+
+.img-container {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#fondo-resultado {
+position:absolute;
+z-index: -1;
+}
+
+#img-resultado {
+    position: absolute;
+    z-index: 1;
+    max-width: 300px;
+    min-width: 300px;
+    margin-top: 150px;
+    margin-left: 270px;
+    margin-top: 320px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
 }
 

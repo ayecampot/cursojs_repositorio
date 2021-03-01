@@ -14,13 +14,23 @@ function Persona(nombre, tamanio, bombillas, calefaccion, temperatura, aire, ali
     }
 }
 
-function consumoHuella(huellaCarbono) {
+function changeResImg(src, texto) {
+    $('#img-resultado').attr("src", src);
+    $("#resultadoTexto").text(texto);
+}
+
+function showResult(huellaCarbono) {
     if (huellaCarbono > 170) {
-        return "resultadouno.jpg";
+        changeResImg("imagenes/cactus.jpg", "MAYOR al promedio ¡A trabajar! ");
     } else if (huellaCarbono == 170) {
-        return "resultadodos.jpg";
+        changeResImg("imagenes/tortuga.jpg", "IGUAL al promedio ¡Nada mal!");
     } else {
-        return "resultadotres.jpg";
+        $.ajax({
+            url: 'https://dog.ceo/api/breed/poodle/images/random',
+            success: function (response) {
+                changeResImg(response.message, "MENOR al promedio ¡Felicitaciones!")
+            }
+        });
     }
 }
 
@@ -38,12 +48,7 @@ function calcularHuella() {
 
     var huellaCarbono = persona.consumo();
 
-    // $("#alert-calculo-huella")[0].innerText = 
-    // $("#alert-calculo")[0].className = "alert alert-success alert-dismissible fade show";
-
-    var puppy = "imagenes/" + consumoHuella(huellaCarbono)
-    var imgRes = $('#img-resultado');
-    imgRes.attr("src", puppy);
+    showResult(huellaCarbono)
 
     var nuevoStorage = [];
     if (localStorage.getItem("histPersonas") !== null) {
@@ -95,3 +100,4 @@ if (localStorage.getItem("histPersonas") !== null) {
         historialSelect.change(completarHistorial);
     }
 }
+

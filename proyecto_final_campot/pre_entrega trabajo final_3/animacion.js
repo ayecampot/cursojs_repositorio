@@ -4,7 +4,7 @@ $(document).ready(function () {
         speed: 1500,
 
         navigation: {
-            nextEl: '.swiper-button-next',
+            nextEl: '.next',
             prevEl: '.swiper-button-prev',
         },
     })
